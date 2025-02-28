@@ -10,6 +10,8 @@ import (
 	"github.com/ardanlabs/service/foundation/logger"
 )
 
+var build = "develop"
+
 func main() {
 	var log *logger.Logger
 	events := logger.Events{
@@ -36,7 +38,7 @@ func run(ctx context.Context, log *logger.Logger) error {
 	// -------------------------------------------------------------------------
 	// GOMAXPROCS
 
-	log.Info(ctx, "startup", "GOMAXPROCS", runtime.GOMAXPROCS(0))
+	log.Info(ctx, "startup", "GOMAXPROCS", runtime.GOMAXPROCS(0), build)
 
 	shutdown := make(chan os.Signal, 1)
 	signal.Notify(shutdown, syscall.SIGINT, syscall.SIGTERM)
