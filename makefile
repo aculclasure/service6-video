@@ -15,10 +15,10 @@ curl-test:
 	curl -il -X GET http://localhost:3000/test
 
 curl-live:
-	curl -il -X GET http://localhost:3000/liveness
+	curl -il -X GET http://localhost:3000/v1/liveness
 
 curl-ready:
-	curl -il -X GET http://localhost:3000/readiness
+	curl -il -X GET http://localhost:3000/v1/readiness
 
 
 # ==============================================================================
