@@ -5,7 +5,7 @@ package mux
 import (
 	"os"
 
-	"github.com/ardanlabs/service/app/sdk/route/sys/checkapi"
+	"github.com/ardanlabs/service/api/services/sales/route/sys/checkapi"
 	"github.com/ardanlabs/service/foundation/web"
 )
 

@@ -13,8 +13,9 @@ import (
 	"time"
 
 	"github.com/ardanlabs/conf/v3"
-	"github.com/ardanlabs/service/app/sdk/debug"
-	"github.com/ardanlabs/service/app/sdk/mux"
+
+	"github.com/ardanlabs/service/api/http/api/debug"
+	"github.com/ardanlabs/service/api/http/api/mux"
 	"github.com/ardanlabs/service/foundation/logger"
 )
 
